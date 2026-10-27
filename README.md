@@ -1,11 +1,19 @@
-# Scorpions — projetos técnicos
+# Projetos técnicos — Thyago Beckenbauer
 
-Repositório central dos projetos técnicos de Thyago Beckenbauer (Scorpions Marketing e Eventos, Scorpions Kids, Bauer Serviços).
-Cada projeto fica na sua própria pasta.
+Repositório central. **Cada empresa tem a sua pasta e os projetos NÃO se misturam.**
 
-| Pasta | O que é | Onde roda |
+| Pasta | Empresa | O que é |
 | --- | --- | --- |
-| `yampi-mcp/` | Conector que liga a loja Yampi da Scorpions Kids ao Claude (pedidos, produtos, estoque, cupons). Não cancela pedidos, não estorna e não troca gateway. | Cloudflare Workers, projeto `yampi-mcp` |
+| `scorpions-kids/` | **Scorpions Kids** (loja de brinquedos — scorpionskids.com.br) | Projetos da loja virtual Yampi e marketplaces |
+| `scorpions-mkt-eventos/` | **Scorpions Marketing e Eventos** (scorpionsmkteventos.com.br) | Projetos da agência (ainda vazio) |
 
-## Origem do yampi-mcp
-Cópia do projeto aberto https://github.com/Eduardo-Orsi/yampi-mcp (licença MIT), versão `fb791fb`, revisada antes da publicação.
+Regras para manutenção:
+1. Scorpions Kids e Scorpions Marketing e Eventos são empresas diferentes. Nada de uma empresa entra na pasta da outra.
+2. Cada projeto tem um README próprio dizendo a empresa, onde roda e quem pode acessar.
+3. Credenciais e senhas NUNCA entram neste repositório (ele é público).
+
+## Índice de projetos
+
+| Projeto | Empresa | Onde roda |
+| --- | --- | --- |
+| [`scorpions-kids/yampi-mcp`](scorpions-kids/yampi-mcp) | Scorpions Kids | Cloudflare Workers, projeto `yampi-mcp` |

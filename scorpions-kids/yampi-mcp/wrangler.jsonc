@@ -5,6 +5,9 @@
 	"compatibility_date": "2025-11-01",
 	"compatibility_flags": ["nodejs_compat"],
 	"observability": { "enabled": true },
+	// SCORPIONS KIDS APENAS: o conector só enxerga a loja oficial da Scorpions Kids.
+	// A loja de teste (test-scorpionsmultiloja) e qualquer outra ficam bloqueadas.
+	"vars": { "ALLOWED_STORES": "scorpionsmultiloja" },
 	// Cofre (Workers KV) onde ficam as credenciais da Yampi, criptografadas
 	"kv_namespaces": [
 		{ "binding": "OAUTH_KV", "id": "da423d00ab9b49afa5f732036ec4a4d7" }
